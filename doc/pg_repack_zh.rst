@@ -483,7 +483,7 @@ pg_repack 仅在初始设置（步骤 1 和 2）期间和最终交换和删除�
   * 添加 ``--index`` 以仅重组指定的索引
   * 添加 ``--only-indexes`` 以仅重组指定表的索引
   * 添加 ``--jobs`` 选项以进行并行操作
-  * 不要求在非集群表上执行 VACUUM FULL 时使用 ``--no-order``（pg_repack 问题 #6）
+  * 不要求在非集群表上执行 VACUUM FULL 时使用 ``--no-order`` （pg_repack 问题 #6）
   * 不等待其他数据库中持有的锁（pg_repack 问题 #11）
   * Bugfix: 正确处理具有 DESC、NULL FIRST/LAST、COLLATE 等选项的键索引（pg_repack 问题 #3）
   * 修复删除时的数据损坏 bug（pg_repack 问题 #23）
